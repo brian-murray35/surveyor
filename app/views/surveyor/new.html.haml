@@ -14,7 +14,7 @@
             = surveys.first.translation(I18n.locale)[:title]
             &nbsp;
             = label_tag :survey_version, 'version:'
-            = select_tag(:survey_version, options_for_select([["-- Current version --", ""]] + (surveys.map(&:survey_version) || [])))
+            = select_tag(:survey_version, options_for_select([["-- Select One --", ""]] + (surveys.map(&:survey_version) || [])))
             &nbsp;
             = submit_tag( t('surveyor.take_it'), :default => "Take it" )
 
