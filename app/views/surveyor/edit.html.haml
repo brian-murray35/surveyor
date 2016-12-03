@@ -14,7 +14,11 @@
     = render "/partials/section", :f => f
     .next_section= next_section
   %br
-
+:javascript
+   $(document).ready(function() {
+     alert('yeah baby');
+   });
+  
 :javascript
   $(document).ready(function() {
     $("input#surveyor_javascript_enabled").val(true);
